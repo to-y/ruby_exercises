@@ -1,3 +1,5 @@
+## Introduction
+
 This is a small challenge to learn more about how blocks work in Ruby. Blocks are actually very similiar to methods.
 
 So let's think about methods for a second... You call a method with data from the outside world — the method's arguments. The code inside the method can see and use this data.
@@ -38,12 +40,37 @@ Without blocks we might write code like this:
     
     start_time = Time.now
     
-    # Calculate the 100th Fibonacci number
-    fibonacci(100)
+    # Calculate the 200th Fibonacci number
+    fibonacci(200)
     
     end_time = Time.now
     
     # This will return the difference in the timestamps in seconds
     running_time = end_time - start_time
     
-    puts "fibonacci(100) took #{running_time} seconds."
+    puts "fibonacci(200) took #{running_time} seconds."
+
+To make our benchmarking logic reusable, let's use blocks to create a benchmark method that can benchmark anything.
+
+### Resources
+1. [Blocks and Yield in Ruby](http://stackoverflow.com/questions/3066703/blocks-and-yields-in-ruby)
+2. [The Building Blocks of Ruby](http://yehudakatz.com/2010/02/07/the-building-blocks-of-ruby/)
+
+### Learning Goals
+The goal of this challenge is to help you get better at understanding and using blocks. Feel free to play around and create toy versions of your code before you dive in.
+
+* Writing methods that take a block parameter
+* Returning values from blocks
+
+### Objectives
+
+**Implement the `benchmark` method in the `benchmark_with_block.rb` file.
+
+    # Be careful, pasting this into IRB will take a long time to print.
+    # It's a loooong string. :)
+    long_string = "apple"*100000000
+    
+    running_time = benchmark { long_string.reverse }
+    
+    puts "string.reverse took #{running_time} seconds to run"
+
