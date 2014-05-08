@@ -64,7 +64,7 @@ The goal of this challenge is to help you get better at understanding and using 
 
 ### Objectives
 
-**Implement the `benchmark` method in the `benchmark_with_block.rb` file.
+**Implement the `benchmark` method** in the `benchmark_with_block.rb` file.
 
     # Be careful, pasting this into IRB will take a long time to print.
     # It's a loooong string. :)
