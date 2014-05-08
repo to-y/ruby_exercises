@@ -2,9 +2,13 @@
 
 This is a small challenge to learn more about how blocks work in Ruby. Blocks are actually very similiar to methods.
 
-So let's think about methods for a second... You call a method with data from the outside world — the method's arguments. The code inside the method can see and use this data.
+So let's think about methods for a second... You call a method with data - the method's arguments - from the outside world. The code inside the method can see and use this data to do it's job.
 
-If arguments are how we pass in data into methods, blocks are how we pass in behavior. Think of them as a chunk of logic or a "brain" that your method can run (aka: "call" or "yield").
+If arguments are how we pass in _data_ into methods, blocks are how we pass in _behavior_. Think of them as a chunk of logic that your method can run (aka: "call" or "yield").
+
+In this case, we can think of a method as a robot that is responsible for doing one thing for us. When we ask it do that thing though, we give it parameters on how to do it, and sometimes we have to give it more than just data parameters, sometimes we have to give it specific instructions to give enough detail about how we want that task accomplished.
+
+Look at `Enumerable#select` (which you'd normally call on an `Array`) or `#detect` methods which use blocks to get their job done. 
 
 In Ruby, blocks can be passed into methods as a sort of "invisible argument", like this:
 
