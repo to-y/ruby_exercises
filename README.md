@@ -66,9 +66,9 @@ The goal of this challenge is to help you get better at understanding and using 
 
 **Implement the `benchmark` method** in the `benchmark_with_block.rb` file.
 
-    # Be careful, pasting this into IRB will take a long time to print.
+    # Be careful, pasting this into IRB/Pry will take a long time to print.
     # It's a loooong string. :)
-    long_string = "apple"*100000000
+    long_string = "apple" * 100000000
     
     running_time = benchmark { long_string.reverse }
     
